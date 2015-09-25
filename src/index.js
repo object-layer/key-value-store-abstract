@@ -7,6 +7,7 @@ export class AbstractStoreLayer {
   constructor(options = {}) {
     this.keyEncoding = options.keyEncoding || 'bytewise';
     this.valueEncoding = options.valueEncoding || 'json';
+    this.root = this;
   }
 
   encode(value, encoding) {
