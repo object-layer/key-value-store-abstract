@@ -1,0 +1,32 @@
+{
+  "name": "store-layer-abstract",
+  "version": "0.1.0",
+  "description": "Base class implementing methods common to any StoreLayer",
+  "author": "Manuel Vila <mvila@3base.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/object-layer/store-layer-abstract"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "prepublish": "npm run compile",
+    "release": "npm run lint && npm run compile && npm test && (git checkout --quiet master && test -z \"$(git status --porcelain)\" && npm version $npm_config_release_type && git push --follow-tags) || echo \"An error occured (unclean repository?)\"",
+    "release-patch": "npm run release --release-type=patch",
+    "release-minor": "npm run release --release-type=minor",
+    "release-major": "npm run release --release-type=major",
+    "lint": "eslint .",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "bytewise": "^1.1.0",
+    "lodash.clone": "^3.0.3"
+  },
+  "devDependencies": {
+    "babel": "~5.8.20",
+    "babel-eslint": "~4.0.5",
+    "eslint": "~1.1.0",
+    "eslint-config-next": "~0.1.0"
+  }
+}
