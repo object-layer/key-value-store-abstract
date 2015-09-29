@@ -4,9 +4,9 @@ import bytewise from 'bytewise';
 import clone from 'lodash.clone';
 
 export class AbstractStoreLayer {
-  constructor(options = {}) {
-    this.keyEncoding = options.keyEncoding || 'bytewise';
-    this.valueEncoding = options.valueEncoding || 'json';
+  constructor({ keyEncoding = 'bytewise', valueEncoding = 'json' } = {}) {
+    this.keyEncoding = keyEncoding;
+    this.valueEncoding = valueEncoding;
     this.root = this;
   }
 
