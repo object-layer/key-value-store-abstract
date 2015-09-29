@@ -10,6 +10,10 @@ export class AbstractStoreLayer {
     this.root = this;
   }
 
+  get insideTransaction() {
+    return this !== this.root;
+  }
+
   encode(value, encoding) {
     switch (encoding) {
       case 'bytewise':
