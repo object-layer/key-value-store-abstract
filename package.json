@@ -1,6 +1,6 @@
 {
   "name": "key-value-store-abstract",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Base class implementing methods common to any KeyValueStore implementation",
   "author": "Manuel Vila <mvila@3base.com>",
   "license": "MIT",
