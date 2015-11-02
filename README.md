@@ -1,6 +1,6 @@
-# store-layer-abstract [![Build Status](https://travis-ci.org/object-layer/store-layer-abstract.svg?branch=master)](https://travis-ci.org/object-layer/store-layer-abstract)
+# key-value-store-abstract [![Build Status](https://travis-ci.org/object-layer/key-value-store-abstract.svg?branch=master)](https://travis-ci.org/object-layer/key-value-store-abstract)
 
-Base class implementing methods common to any [StoreLayer](https://www.npmjs.com/package/store-layer).
+Base class implementing methods common to any [KeyValueStore](https://www.npmjs.com/package/key-value-store) implementation.
 
 This module is not intended to be used directly.
 

@@ -3,7 +3,7 @@
 import bytewise from 'bytewise';
 import clone from 'lodash.clone';
 
-export class AbstractStoreLayer {
+export class AbstractKeyValueStore {
   constructor({ keyEncoding = 'bytewise', valueEncoding = 'json' } = {}) {
     this.keyEncoding = keyEncoding;
     this.valueEncoding = valueEncoding;
@@ -195,4 +195,4 @@ export class AbstractStoreLayer {
   }
 }
 
-export default AbstractStoreLayer;
+export default AbstractKeyValueStore;

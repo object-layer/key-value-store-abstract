@@ -1,13 +1,13 @@
 {
-  "name": "store-layer-abstract",
+  "name": "key-value-store-abstract",
   "version": "0.1.3",
-  "description": "Base class implementing methods common to any StoreLayer",
+  "description": "Base class implementing methods common to any KeyValueStore implementation",
   "author": "Manuel Vila <mvila@3base.com>",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/object-layer/store-layer-abstract"
+    "url": "git://github.com/object-layer/key-value-store-abstract"
   },
   "scripts": {
     "compile": "babel src --out-dir lib",
